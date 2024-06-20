@@ -8,14 +8,8 @@ interface InputProps {
   error?: string;
   rules?: RegisterOptions;
 }
-export function Input({
-  name,
-  placeholder,
-  type,
-  register,
-  rules,
-  error,
-}: InputProps) {
+
+export function Input({ name, placeholder, type, register, rules, error }: InputProps) {
   return (
     <div>
       <input
@@ -25,8 +19,7 @@ export function Input({
         {...register(name, rules)}
         id={name}
       />
-
-      {error && <p className="my-1 text-red-500">{error}</p>}
+      {error && <p className="my-1 text-xs text-red-500">{error}</p>}
     </div>
   );
 }

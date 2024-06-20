@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from "./components/layout";
 import { Home } from "./pages/home";
-import { CarDetail } from "./pages/car";
-import { Dashboard } from "./pages/dashboard";
-import { CarRegister } from "./pages/dashboard/new";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
-import { Private } from "./routes/Private"; // Certifique-se que o caminho e o nome estão corretos
+import { CarDetails } from "./pages/details";
+import { CarRegister } from "./pages/dashboard/carRegister";
+import { Dashboard } from "./pages/dashboard";
+import { Layout } from "./components/layout";
+import { Private } from "./routes/Private";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "car/:id",
-        element: <CarDetail />,
+        path: "/car/:id",
+        element: <CarDetails />,
       },
       {
         path: "/dashboard",
