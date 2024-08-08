@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Web Carros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://i.ibb.co/tx9gJJh/web-Carros.png" alt="Web Carros" width="600"/>
 
-Currently, two official plugins are available:
+Este é um projeto de frontend para uma plataforma de revenda de carros. O objetivo é fornecer uma interface intuitiva para visualizar e gerenciar carros disponíveis para venda.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visualize o Projeto
 
-## Expanding the ESLint configuration
+Você pode visualizar o projeto em [Web Carros](https://web-carros-theta.vercel.app/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Biblioteca JavaScript para criar interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+- **Tailwind CSS**: Framework CSS utilitário para estilização.
+- **Vite**: Ferramenta de build para aplicações web rápidas e modernas.
+- **Firebase**: Plataforma para autenticação e gerenciamento de dados (se aplicável).
+- **Zod**: Biblioteca de validação de esquemas TypeScript.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Funcionalidades
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Visualização de carros disponíveis para venda.
+- Página de detalhes de cada carro.
+- Administração de carros
+
+## Como Rodar o Projeto
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/mathiasfuhr/webCarros.git
